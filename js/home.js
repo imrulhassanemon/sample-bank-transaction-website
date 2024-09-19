@@ -5,9 +5,25 @@ document.getElementById('add-money').addEventListener('click', function(event){
     
     // get money 
     const amount = document.getElementById("amount").value;
-    console.log(amount)
 
     // get password 
     const pass = document.getElementById("password").value;
-    console.log(pass)
+
+    // varify the pin number 
+    if(pass === "123"){
+
+        const totalAmount = document.getElementById("total-amount").innerText;
+        const addMoneyInput = parseFloat(totalAmount)
+
+        const blanceNumber = parseFloat(amount)
+        const newBlance = blanceNumber + addMoneyInput;
+
+        document.getElementById("total-amount").innerText = newBlance;
+
+        amount.value = ''
+        
+    }else{
+        alert("You enter wrong password")
+    }
+
 })
