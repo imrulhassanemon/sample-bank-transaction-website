@@ -20,8 +20,8 @@ document.getElementById('add-money').addEventListener('click', function(event){
 
         document.getElementById("total-amount").innerText = newBlance;
 
-        amount.value = ''
         
+        amount.value = ' '
     }else{
         alert("You enter wrong password")
     }
