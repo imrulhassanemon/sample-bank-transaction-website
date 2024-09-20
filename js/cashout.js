@@ -22,3 +22,15 @@ document.getElementById('add-money-cashout').addEventListener("click", function(
         alert("invalid password ! please enter the right password")
     }
 })
+
+
+document.getElementById("btn-add").addEventListener("click", function(){
+    document.getElementById("hidden1").classList.remove("hidden")
+    document.getElementById("cashout-form").classList.add("hidden")
+})
+
+
+document.getElementById("btn-cash-out").addEventListener("click", function(){
+    document.getElementById("hidden1").classList.add("hidden")
+    document.getElementById("cashout-form").classList.remove("hidden")
+})
